@@ -131,13 +131,13 @@ function BookingSuccess() {
           
           <div className="flex gap-3">
             <Link 
-              to="/booking" 
+              to="/book" 
               className="flex-1 bg-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-green-700 transition text-center"
             >
               Book Another Slot
             </Link>
             <Link 
-              to="/dashboard" 
+              to="/" 
               className="flex-1 bg-gray-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-gray-700 transition text-center"
             >
               Go to Dashboard
