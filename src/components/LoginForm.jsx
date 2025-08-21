@@ -35,7 +35,7 @@ function LoginForm() {
       body.append("username", formData.email);
       body.append("password", formData.password);
 
-      const response = await fetch("http://127.0.0.1:8000/auth/login", {
+      const response = await fetch("https://dockterbackend.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",

@@ -43,7 +43,7 @@ function BookingForm() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://127.0.0.1:8000/slots/view/${date}`, {
+      const response = await fetch(`https://dockterbackend.onrender.com/slots/view/${date}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ function BookingForm() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://127.0.0.1:8000/appointments/book", {
+      const response = await fetch("https://dockterbackend.onrender.com/appointments/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
